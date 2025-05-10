@@ -1,4 +1,5 @@
- ## 📋 Project Backlog Breakdown
+markdown_table = """
+## 📋 Project Backlog Breakdown
 
 | ID | Epic                     | User Story                                                      | Estimate (hrs) | Status     |
 |----|--------------------------|------------------------------------------------------------------|----------------|------------|
@@ -22,3 +23,7 @@
 | 8  | Security & Governance    | Set up Role-Based Access Control (RBAC) with Azure Entra ID     | 0.5            |            |
 | 9  | Testing & Validation     | Insert sample records in SQL Server to trigger the full pipeline | 0.5           |            |
 |    |                          | Verify Power BI dashboard updates accordingly                   |                |            |
+"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(markdown_table)
