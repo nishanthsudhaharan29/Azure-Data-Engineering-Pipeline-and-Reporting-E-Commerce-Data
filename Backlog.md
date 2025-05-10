@@ -1,4 +1,4 @@
-## 📋 Project Backlog Breakdown
+## Project Backlog Breakdown
 
 | ID  | Epic                     | User Story                                                         | Estimate Hours | Status     |
 |-----|--------------------------|----------------------------------------------------------------------|----------------|------------|
