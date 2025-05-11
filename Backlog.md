@@ -11,10 +11,10 @@
 | 2   | Data Source Preparation  | Install SQL Server and SSMS locally                                 | 0.5            | Completed  |
 |     |                          | Restore AdventureWorks database                                     |                | Completed  |
 | 3   | Data Ingestion           | Create Linked Service and Integration Runtime in ADF                | 3              | Completed  |
-|     |                          | Create ADF pipeline to copy data to Bronze layer in ADLS            |                | Completed       |
-| 4   | Data Transformation      | Mount ADLS to Databricks                                            | 10             | Completed            |
-|     |                          | Create Databricks notebook for Bronze ➝ Silver transformation       |                |            |
-|     |                          | Create Databricks notebook for Silver ➝ Gold transformation         |                |            |
+|     |                          | Create ADF pipeline to copy data to Bronze layer in ADLS            |                | Completed  |
+| 4   | Data Transformation      | Mount ADLS to Databricks                                            | 10             | Completed  |
+|     |                          | Create Databricks notebook for Bronze ➝ Silver transformation      |                | Completed  |
+|     |                          | Create Databricks notebook for Silver ➝ Gold transformation        |                |            |
 | 5   | Data Loading             | Load Gold data into Azure Synapse Analytics                         | 0.5            |            |
 | 6   | Reporting                | Connect Power BI to Synapse                                         | 3              |            |
 |     |                          | Build dashboard visualizing KPIs by gender, category, and date      |                |            |
