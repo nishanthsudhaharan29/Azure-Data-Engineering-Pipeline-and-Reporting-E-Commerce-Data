@@ -12,7 +12,7 @@
 |     |                          | Restore AdventureWorks database                                     |                | Completed  |
 | 3   | Data Ingestion           | Create Linked Service and Integration Runtime in ADF                | 3              | Completed  |
 |     |                          | Create ADF pipeline to copy data to Bronze layer in ADLS            |                | Completed       |
-| 4   | Data Transformation      | Mount ADLS to Databricks                                            | 10             |            |
+| 4   | Data Transformation      | Mount ADLS to Databricks                                            | 10             | Completed            |
 |     |                          | Create Databricks notebook for Bronze ➝ Silver transformation       |                |            |
 |     |                          | Create Databricks notebook for Silver ➝ Gold transformation         |                |            |
 | 5   | Data Loading             | Load Gold data into Azure Synapse Analytics                         | 0.5            |            |
