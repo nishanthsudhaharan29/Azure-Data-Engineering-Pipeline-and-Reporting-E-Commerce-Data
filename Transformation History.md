@@ -34,7 +34,5 @@
 ### SalesOrderDetail Table
 - Rename column: `line_total` → `total_price`.
 
----
-
-### No transformations required for the written tables.
+- No transformations required for any other table.
 - Write all tables to the **Gold** container.
