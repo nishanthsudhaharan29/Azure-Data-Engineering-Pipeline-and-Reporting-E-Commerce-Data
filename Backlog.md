@@ -14,7 +14,7 @@
 |     |                          | Create ADF pipeline to copy data to Bronze layer in ADLS            |                | Completed  |
 | 4   | Data Transformation      | Mount ADLS to Databricks                                            | 10             | Completed  |
 |     |                          | Create Databricks notebook for Bronze ➝ Silver transformation      |                | Completed  |
-|     |                          | Create Databricks notebook for Silver ➝ Gold transformation        |                |            |
+|     |                          | Create Databricks notebook for Silver ➝ Gold transformation        |                | Completed  |
 | 5   | Data Loading             | Load Gold data into Azure Synapse Analytics                         | 0.5            |            |
 | 6   | Reporting                | Connect Power BI to Synapse                                         | 3              |            |
 |     |                          | Build dashboard visualizing KPIs by gender, category, and date      |                |            |
