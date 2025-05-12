@@ -16,8 +16,9 @@
 
 ### Customer Table
 1. Create a `gender` column based on the `title` column.
-2. Extract `sales_person` name in the format: `person_name` + `_` + `person_id` (e.g., `James_1`).
-3. Clean `phone_number` column by removing:
+2. Rename the column sales_person -> sales_person_id
+3. Extract the name of the sales person from sales_person_id colimn.
+4. Clean `phone_number` column by removing:
    - Country code
    - Brackets
    - Dashes
