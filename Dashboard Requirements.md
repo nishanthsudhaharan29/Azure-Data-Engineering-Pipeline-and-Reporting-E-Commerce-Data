@@ -71,22 +71,3 @@ Understand customer distribution by gender, geography, and regional sales contri
 
 ---
 
-## Page 3: Sales Performance by Salesperson
-
-### Objective:
-Evaluate performance of each salesperson, including gender-based analysis.
-
-### Visual 1: Sales by Salesperson
-- **Type**: Bar Chart  
-- **Position**: Top full width  
-- **Details**:
-  - Axis: `sales_person`
-  - Values: `SUM(total_price)`
-
-### Visual 2: Sales per Salesperson by Gender
-- **Type**: Stacked Column Chart  
-- **Position**: Below or side-by-side  
-- **Details**:
-  - Axis: `sales_person`
-  - Legend: `gender`
-  - Values: `COUNT(customer_id)` or `SUM(total_price)`
