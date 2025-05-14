@@ -1,6 +1,7 @@
 # Azure Data Engineering Pipeline and Power BI Report: Sales Data
 
 ## Overview
+![image](images/1.png)
 
 This project delivers a full-scale Azure-based data engineering pipeline that addresses a critical business requirement. The objective is to extract customer and sales data from an on-premises SQL Server database, process and transform the data in the cloud, and deliver actionable insights through a Power BI dashboard.
 
@@ -10,6 +11,7 @@ The dashboard enables stakeholders to explore sales pattern, demographics and th
 ---
 
 ## Solution Architecture
+![image](images/2.png)
 
 The solution is structured into the following major components:
 
@@ -61,6 +63,8 @@ The solution is structured into the following major components:
 
 ### Step 1: Azure Environment Setup
 
+![image](images/3.png)
+
 1. **Create a Resource Group**  
    Set up a new resource group in the Azure portal.
 
@@ -78,22 +82,31 @@ The solution is structured into the following major components:
 1. **SQL Server Setup**
    - Install SQL Server and SQL Server Management Studio (SSMS)
    - Restore the `AdventureWorks` sample database
+  ![image](images/4.png)
 
 2. **Data Ingestion with ADF**
    - Create Linked Services and Integration Runtimes in Azure Data Factory
    - Build pipelines in ADF to copy data from the SQL Server to the Bronze layer in ADLS
-
+![image](images/5.png)
+![image](images/6.png)
+![image](images/7.png)
+![image](images/8.png)
 ---
 
 ### Step 3: Data Transformation
 
 1. **Mount ADLS to Databricks**
    - Configure Databricks to access ADLS using a service principal and secret stored in Key Vault
+![image](images/9.png)
 
 2. **Transform Data**
    - Develop Databricks notebooks to clean and structure the data:
      - Bronze ➝ Silver (cleansing and standardization)
+![image](images/10.png)
+![image](images/11.png)
      - Silver ➝ Gold (aggregation and modeling)
+![image](images/12.png)
+![image](images/13.png)
 
 ---
 
@@ -102,10 +115,17 @@ The solution is structured into the following major components:
 1. **Load Data into Synapse**
    - Create Synapse SQL pools
    - Load the Gold layer data into Synapse for analysis
+   - Create vies by joining tables and ensure column-level security
+    
+![image](images/14.png)
 
 2. **Power BI Dashboard**
    - Connect Power BI to Synapse Analytics
-   - Build dashboards based on business requirements (sales by gender, product category, date filters)
+   - Build dashboards based on business requirements
+  
+  ![image](images/15.png)
+  ![image](images/16.png)
+  ![image](images/17.png)
 
 ---
 
@@ -114,6 +134,9 @@ The solution is structured into the following major components:
 - Use ADF trigger functionality to schedule pipelines to run daily
 - Monitor pipeline execution using ADF Monitoring and Synapse Monitoring views
 
+![image](images/18.png)
+![image](images/19.png)
+![image](images/20.png)
 ---
 
 ### Step 6: Security and Governance
