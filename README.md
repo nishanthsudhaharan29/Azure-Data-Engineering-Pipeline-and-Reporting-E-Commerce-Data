@@ -117,7 +117,7 @@ The solution is structured into the following major components:
    - Load the Gold layer data into Synapse for analysis
    - Create vies by joining tables and ensure column-level security
     
-![image](images/14.png)
+![image](images/gg.png)
 
 2. **Power BI Dashboard**
    - Connect Power BI to Synapse Analytics
