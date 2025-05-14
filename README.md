@@ -11,7 +11,7 @@ The dashboard enables stakeholders to explore sales pattern, demographics and th
 ---
 
 ## Solution Architecture
-![image](images/2.png)
+![image](images/2.PNG)
 
 The solution is structured into the following major components:
 
