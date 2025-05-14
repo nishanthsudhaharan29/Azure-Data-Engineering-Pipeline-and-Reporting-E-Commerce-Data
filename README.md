@@ -125,7 +125,7 @@ The solution is structured into the following major components:
   
   ![image](images/15.png)
   ![image](images/16.png)
-  ![image](images/17.png)
+
 
 ---
 
