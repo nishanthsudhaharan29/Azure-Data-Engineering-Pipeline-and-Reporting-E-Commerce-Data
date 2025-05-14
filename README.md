@@ -6,15 +6,6 @@ This project delivers a full-scale Azure-based data engineering pipeline that ad
 
 The dashboard enables stakeholders to explore sales pattern, demographics and their relationship to product sales by allowing filtering by product category, and country.
 
----
-
-## Business Requirements
-
-The business has identified a need to better understand customer demographics and how they impact purchasing behavior. The key requirements are:
-
-- **Sales by Gender and Product Category**: Track products sold, total revenue, and customer gender distribution.
-- **Interactive Filtering**: Filter data by product category, gender, and date range.
-- **Stakeholder Access**: Easy-to-use Power BI dashboard for business decision-makers.
 
 ---
 
