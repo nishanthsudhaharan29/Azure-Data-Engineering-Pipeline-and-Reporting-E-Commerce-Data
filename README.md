@@ -58,3 +58,90 @@ The solution is structured into the following major components:
 - **SQL Server (On-Premises)**: Source system
 
 ---
+
+## Setup Instructions
+
+### Prerequisites
+
+- An Azure account with sufficient credits
+- Access to an on-premises SQL Server database
+
+---
+
+### Step 1: Azure Environment Setup
+
+1. **Create a Resource Group**  
+   Set up a new resource group in the Azure portal.
+
+2. **Provision Required Services**
+   - Create an Azure Data Factory instance
+   - Set up Azure Data Lake Storage (ADLS) with Bronze, Silver, and Gold containers
+   - Set up an Azure Databricks workspace
+   - Set up an Azure Synapse Analytics workspace
+   - Configure Azure Key Vault for storing secrets and credentials
+
+---
+
+### Step 2: Data Ingestion
+
+1. **SQL Server Setup**
+   - Install SQL Server and SQL Server Management Studio (SSMS)
+   - Restore the `AdventureWorks` sample database
+
+2. **Data Ingestion with ADF**
+   - Create Linked Services and Integration Runtimes in Azure Data Factory
+   - Build pipelines in ADF to copy data from the SQL Server to the Bronze layer in ADLS
+
+---
+
+### Step 3: Data Transformation
+
+1. **Mount ADLS to Databricks**
+   - Configure Databricks to access ADLS using a service principal and secret stored in Key Vault
+
+2. **Transform Data**
+   - Develop Databricks notebooks to clean and structure the data:
+     - Bronze ➝ Silver (cleansing and standardization)
+     - Silver ➝ Gold (aggregation and modeling)
+
+---
+
+### Step 4: Data Loading and Reporting
+
+1. **Load Data into Synapse**
+   - Create Synapse SQL pools
+   - Load the Gold layer data into Synapse for analysis
+
+2. **Power BI Dashboard**
+   - Connect Power BI to Synapse Analytics
+   - Build dashboards based on business requirements (sales by gender, product category, date filters)
+
+---
+
+### Step 5: Automation and Monitoring
+
+- Use ADF trigger functionality to schedule pipelines to run daily
+- Monitor pipeline execution using ADF Monitoring and Synapse Monitoring views
+
+---
+
+### Step 6: Security and Governance
+
+- Set up Role-Based Access Control (RBAC) in Azure using Azure Entra ID
+- Use Azure Key Vault to manage and restrict access to secrets
+
+---
+
+### Step 7: End-to-End Testing
+
+1. Insert new sample records into the on-prem SQL Server
+2. Trigger the ADF pipeline manually or wait for the scheduled run
+3. Verify that the data flows through each layer (Bronze ➝ Gold)
+4. Confirm that the Power BI dashboard reflects the new data
+
+---
+
+## Conclusion
+
+This project offers a complete, automated Azure data pipeline that transforms raw operational data into valuable business insights. With daily refreshes and secure, scalable infrastructure, stakeholders can rely on up-to-date analytics to make informed decisions.
+
