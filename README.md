@@ -2,7 +2,7 @@
 
 ## Overview
 ![image](images/1.png)
-![image](images/11.png)
+![image](images/111.png)
 This project delivers a full-scale Azure-based data engineering pipeline that addresses a critical business requirement. The objective is to extract customer and sales data from an on-premises SQL Server database, process and transform the data in the cloud, and deliver actionable insights through a Power BI dashboard.
 
 The dashboard enables stakeholders to explore sales pattern, demographics and their relationship to product sales by allowing filtering by product category, and country.
