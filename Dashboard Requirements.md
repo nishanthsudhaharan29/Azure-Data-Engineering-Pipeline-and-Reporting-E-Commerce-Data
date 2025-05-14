@@ -1,73 +1,46 @@
-# Power BI Report Design: Sales & Customer Analytics Dashboard
+# AdventureWorks Sales Performance Dashboard
 
-## Report Overview
+## Project Name
+**AdventureWorks Sales Performance Dashboard**
 
-This Power BI report is structured into three pages, each focused on delivering actionable business insights.
+## Purpose
+To provide a clear, interactive, and location-specific summary of sales performance for AdventureWorks, split between the United States and the United Kingdom, enabling data-driven decisions on product, geography, and profitability.
 
----
+## Scope
+Create a Power BI Dashboard with two pages:
 
-## Page 1: Sales Overview
+- **Page 1:** United States Sales Data  
+- **Page 2:** United Kingdom Sales Data
 
-### Objective:
-Provide an executive-level view of total sales performance, product performance, and time-based trends.
+Both pages should have the same structure and visual components, tailored to the respective country’s data.
 
-### Visual 1: Total Sales and Orders KPIs
-- **Type**: KPI Cards  
-- **Position**: Top row (left to right)  
-- **Metrics**:
-  - Total Sales → `SUM(total_price)`
-  - Total Orders → `COUNT(sales_order_id)`
-  - Average Order Value → `AVERAGE(total_price)`
+## Page Structure and Visuals
 
-### Visual 2: Sales by Product Category
-- **Type**: Clustered Column Chart  
-- **Position**: Below KPIs (left)  
-- **Details**:
-  - Axis: `category_name`
-  - Values: `SUM(total_price)`
+### Filters (Top Left)
+- **Category Slicer (Dropdown):** Filter data by product category.
+- **Country Tabs (Buttons or Bookmarks):**
+  - United States
+  - United Kingdom
 
-### Visual 3: Top Products by Revenue
-- **Type**: Bar Chart  
-- **Position**: Below KPIs (right)  
-- **Details**:
-  - Axis: `product_name`
-  - Values: `SUM(total_price)`
-  - Sort: Descending by revenue
+### KPI Cards (Top Row)
+Display the following metrics using card visuals:
+- Products Sold
+- Customers
+- Orders
+- Revenue (e.g., $645.73K)
+- Income (Profit) (e.g., -$11.27K)
 
-### Visual 4: Sales Trend Over Time
-- **Type**: Line Chart  
-- **Position**: Bottom (full width)  
-- **Details**:
-  - Axis: `sale_date`
-  - Values: `SUM(total_price)`
+### Bar Chart – Profit Margin in USD
+- **X-Axis:** Profit (Income) and Revenue
+- **Y-Axis:** Product Names
+- **Details:**
+  - Use side-by-side bars for Revenue (blue) and Income (light blue)
+  - Display values in K (thousands)
 
----
-
-## Page 2: Customer Demographics
-
-### Objective:
-Understand customer distribution by gender, geography, and regional sales contribution.
-
-### Visual 1: Customer Gender Breakdown
-- **Type**: Donut or Pie Chart  
-- **Position**: Top-left  
-- **Details**:
-  - Legend: `gender`
-  - Values: `COUNT(customer_id)`
-
-### Visual 2: Sales by Country
-- **Type**: Filled Map or Bubble Map  
-- **Position**: Top-right  
-- **Details**:
-  - Location: `country`
-  - Size/Color: `SUM(total_price)`
-
-### Visual 3: Sales by City and State
-- **Type**: Matrix or Bar Chart  
-- **Position**: Bottom half  
-- **Details**:
-  - Rows: `state_province`, `city`
-  - Values: `SUM(total_price)`
-
----
-
+### Map Visual – Revenue in USD
+- **Map Type:** Basic or Filled Map
+- **Data Points:**
+  - Location (e.g., California, Nevada, etc.)
+  - Size/color of bubble based on Revenue
+  - Tooltip shows revenue per region
+- **For UK page:** Use equivalent regions (e.g., London, Manchester, etc.)
