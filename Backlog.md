@@ -18,8 +18,8 @@
 | 5   | Data Loading             | Load Gold data into Azure Synapse Analytics                         | 4              | Completed  |
 |     |                          | Create views with joins and column-level security                   |                | Completed  |
 | 6   | Reporting                | Connect Power BI to Synapse                                         | 4              | Completed  |
-|     |                          | Build dashboard based on the requirements                           |                |            |
-| 7   | Automation & Monitoring  | Schedule ADF pipelines to run daily                                 | 0.5            |            |
-| 8   | Security & Governance    | Set up Role-Based Access Control (RBAC) with Azure Entra ID         | 0.5            |            |
-| 9   | Testing & Validation     | Insert sample records in SQL Server to trigger the full pipeline    | 0.5            |            |
-|     |                          | Verify Power BI dashboard updates accordingly                       |                |            |
+|     |                          | Build dashboard based on the requirements                           |                | Completed  |
+| 7   | Automation & Monitoring  | Schedule ADF pipelines to run daily                                 | 0.5            | Completed  |
+| 8   | Security & Governance    | Set up Role-Based Access Control (RBAC) with Azure Entra ID         | 0.5            | Completed  |
+| 9   | Testing & Validation     | Insert sample records in SQL Server to trigger the full pipeline    | 0.5            | Completed  |
+|     |                          | Verify Power BI dashboard updates accordingly                       |                | Completed  |
