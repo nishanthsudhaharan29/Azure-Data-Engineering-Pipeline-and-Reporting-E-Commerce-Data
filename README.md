@@ -10,7 +10,9 @@ The dashboard enables stakeholders to explore sales pattern, demographics and th
 
 ---
 ## What value does this project bring to a business?
-This project is highly valuable in the real world because it empowers businesses with timely, data-driven insights into their sales performance across different regions and product categories. By automating data ingestion, transformation, and visualization, the solution reduces manual reporting overhead while ensuring that decision-makers have access to up-to-date information.
+This project is highly valuable in the real world because it empowers businesses with timely, data-driven insights about their sales performance across different regions and product categories. By automating data ingestion, transformation, and visualization, the solution reduces manual reporting overhead while ensuring that decision-makers have access to up-to-date information.
+
+Transformations are a critical part of the data pipeline because they ensure that data is clean, consistent, and ready for analysis. Standardizing formats such as dates and column names makes data easier to query and integrate across systems, while specific transformations like deriving gender from titles or cleaning phone numbers add value by enhancing data quality and usability. Renaming columns for clarity and expanding abbreviations improve readability and reduce ambiguity, which is especially important for business users and analysts. By structuring the data into refined layers (Silver and Gold), transformations turn raw, messy input into reliable, business-ready datasets that support accurate and meaningful insights in tools like Power BI.
 
 The Power BI dashboard allows stakeholders to track key metrics like revenue, income, customer count, and product performance at a glance, making it easier to identify trends, detect issues (e.g., negative income), and optimize operations and marketing strategies. This leads to better-informed decisions that drive growth and efficiency.
 
