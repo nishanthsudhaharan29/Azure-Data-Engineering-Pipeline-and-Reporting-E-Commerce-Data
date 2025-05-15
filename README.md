@@ -9,6 +9,11 @@ The dashboard enables stakeholders to explore sales pattern, demographics and th
 
 
 ---
+## What value does this project bring to a business?
+This project is highly valuable in the real world because it empowers businesses with timely, data-driven insights into their sales performance across different regions and product categories. By automating data ingestion, transformation, and visualization, the solution reduces manual reporting overhead while ensuring that decision-makers have access to up-to-date information.
+
+The Power BI dashboard allows stakeholders to track key metrics like revenue, income, customer count, and product performance at a glance, making it easier to identify trends, detect issues (e.g., negative income), and optimize operations and marketing strategies. This leads to better-informed decisions that drive growth and efficiency.
+---
 
 ## Solution Architecture
 ![image](images/2.PNG)
