@@ -96,6 +96,7 @@ The solution is structured into the following major components:
 
 2. **Data Ingestion with ADF**
    - Create Linked Services and Integration Runtimes in Azure Data Factory
+   - Add sensitive information and secrets in key valut and link to ADF  
    - Build pipelines in ADF to copy data from the SQL Server to the Bronze layer in ADLS
 ![image](images/5.png)
 ![image](images/6.png)
@@ -149,12 +150,7 @@ The solution is structured into the following major components:
 ![image](images/19.png)
 ![image](images/20.png)
 ![image](images/22.png)
----
 
-### Step 6: Security and Governance
-
-- Set up Role-Based Access Control (RBAC) in Azure using Azure Entra ID
-- Use Azure Key Vault to manage and restrict access to secrets
 
 ---
 
