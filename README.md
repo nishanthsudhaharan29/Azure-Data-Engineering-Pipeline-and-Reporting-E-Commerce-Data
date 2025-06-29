@@ -106,7 +106,8 @@ The solution is structured into the following major components:
 ### Step 3: Data Transformation
 
 1. **Mount ADLS to Databricks**
-   - Configure Databricks to access ADLS using a service principal and secret stored in Key Vault
+   - Give Storage Blob Data Contributor permission to Unity Catalog Access Connector for databricks
+   - Create credentials and external locations pointing to the ADLS containers
 ![image](images/9.png)
 
 2. **Transform Data**
