@@ -21,7 +21,7 @@ The Power BI dashboard allows stakeholders to track key metrics like revenue, in
 ---
 
 ## Solution Architecture
-![image](images/arc.PNG)
+![image](images/arc.png)
 
 The solution is structured into the following major components:
 
